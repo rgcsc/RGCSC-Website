@@ -124,10 +124,3 @@ a{
 	-webkit-animation-delay: 3s;
  	animation-delay: 3s;
 }
-
-.heartBeat {
-    webkit-animation: heartBeat 3s; /* Safari 4+ */
-  -moz-animation:    heartBeat 3s; /* Fx 5+ */
-  -o-animation:      heartBeat 3s; /* Opera 12+ */
-  animation:         heartBeat 3s; /* IE 10+, Fx 29+ */
-}
