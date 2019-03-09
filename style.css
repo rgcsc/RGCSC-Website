@@ -1,0 +1,133 @@
+body {
+    margin: 0 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  filter: brightness(25%) blur(5px);
+}
+
+#line {
+    border-left: 5px solid white;
+    margin-left: -3px;
+    left: 50%;
+    position: absolute;
+    top: 51vh;
+    height: 4vh;
+    width: 3px;
+}
+
+#aboutWrapper{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100vh;
+}
+
+#bgImg {
+    width: 100vw;
+    height: 100vh;
+    background: url(Pictures/GroupPhoto.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: brightness(50%);
+}
+
+#school {
+	animation-name: slidetopleft;
+	animation-duration: 5s;
+	animation-delay: 1s;
+	font-size: 3em;
+	position: absolute;
+	top: 40vh;
+	left: 40vw;
+	animation-fill-mode: forwards;
+}
+
+.title{
+   	font-family: 'Roboto Mono', monospace;
+    color: white; 
+}
+
+#introText{
+    filter: brightness(100%);
+    color: darkblue;
+    font-size: 3em;
+    margin: 0;
+    z-index: 1;
+}
+
+#club {
+	position: absolute;
+	bottom: 40vh;
+	right: 40vw;
+    font-size: 2em;
+	animation-name: slidebottomright;
+	animation-duration: 5s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+.about {
+	position: absolute;
+	top: 50vh;
+	right: 50vw;
+    font-family: 'Inconsolata', monospace;
+    margin-right: 5vw;
+    color: white;
+}
+
+.contact {
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+    font-family: 'Inconsolata', monospace;
+    padding-left: 5vw;
+    color: white;
+}
+	
+@keyframes slidetopleft {
+  from {
+	text-align: center;
+    vertical-align: 50vw;
+  }
+  to {
+  	top: 0%;
+  	left: 2%;
+  }
+}
+
+@keyframes slidebottomright {
+	from {
+		bottom: 40vh;
+		right: 40vw;
+	}
+	to {
+		right: 1vw;
+		bottom: 1vh;
+	}
+}
+
+.animation-delay-3 {
+	-webkit-animation-delay: 3s;
+ 	animation-delay: 3s;
+}
+
+.heartBeat {
+    webkit-animation: heartBeat 3s; /* Safari 4+ */
+  -moz-animation:    heartBeat 3s; /* Fx 5+ */
+  -o-animation:      heartBeat 3s; /* Opera 12+ */
+  animation:         heartBeat 3s; /* IE 10+, Fx 29+ */
+}
