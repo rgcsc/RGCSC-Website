@@ -2,7 +2,6 @@
 <head> 
 	<title>RGSS COMP SCI</title>
 	<link href="./style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="node_modules/animate.css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono" rel="stylesheet"> 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,8 +9,21 @@
 	<meta name="description" content="Richmond Green Secondary School's computer science club website">
 </head> 
 <body>
-    <div id="aboutWrapper">
+    <div id="aboutTitleWrapper">
         <h1 class="title" id="introText">Computer Science Gods</h1>
         <div id="bgImg"></div>
     </div>   
+    <div id="aboutBodyWrapper">
+        <sidebar id="sbLeft">
+            <btn onclick="Scroll(-1)">←</btn>
+        </sidebar>
+        <h2>Exploring Computer Science</h2>
+        <img id="galleryImg" src="Pictures/gallaryImages/Basics.jpg">
+        <sidebar id="sbRight">
+             <btn onclick="Scroll(1)">→</btn>
+        </sidebar>
+        <p id="description">Teaching the essentials</p>
+    </div>
+    <p id="back"><a href="index.html">BACK</a></p>
+    <script src="gallary.js"></script>
 </body>
