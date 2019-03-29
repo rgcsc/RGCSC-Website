@@ -49,38 +49,12 @@ a{
     vertical-align: top;
 }
 
-#aboutBodyWrapper btn {
-    position: relative;
-    border: solid black 2px;
-    padding: 0.75vh .9vw;
-    border-radius: 10px;
-	cursor: pointer;
-}
-
-
-#aboutBodyWrapper sidebar {
-    width: 3vw;
-    top: 245vh;
-    height: 3vw;
-    margin: 5vh;
-    position: absolute;
-    vertical-align: middle;
-}
-
-#sbLeft{
-    left: 0.1vw;
-}
-
-#sbRight{
-    right: 0.1vw;
-}
-
 #galleryImg {
     margin: 2vh;
     height: 75vh;
     width: 75vw;
     border: solid black 3px;
-    
+    cursor: pointer;
 }
 
 #contactWrapper{
